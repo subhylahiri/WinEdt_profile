@@ -4,3 +4,5 @@
 *.bak
 *.prj
 Config/
+MUI/
+ConfigEx/UserPreferences.ini
