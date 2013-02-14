@@ -1,0 +1,14 @@
+// ===============================================================================
+// -*- ASCII:EDT -*-
+//
+// Uninstall FasTeX for WinEdt
+//
+// ===============================================================================
+
+Requires(20100208);
+Prompt('Do you really want to uninstall FasTeX?',1,2);
+IfOK("LoadConfig('%b\ConfigEx\ActiveStrings.ini');","End;");
+Prompt('Would you like to load your Private Settings (Private.ini script) now?',1,2);
+IfOK("LoadConfig('%b\ConfigEx\Private.ini');");
+Prompt('FasTeX uninstall procedure completed!',0,1);
+End;

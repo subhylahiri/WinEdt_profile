@@ -1,0 +1,34 @@
+// ===============================================================================
+// -*- ASCII:EDT -*-
+//
+// Install FasTeX for WinEdt
+//
+// ===============================================================================
+
+Requires(20100208);
+
+// Checking install path...
+Assign('FasTeXini','%b\ConfigEx\FasTeX.ini');
+Assign('FasTeXedt','%b\Macros\Active Strings\FasTeX\FasTeX_Templates.edt');
+Assign('FasTeXdat','%b\Macros\Active Strings\FasTeX\FasTeX_Templates.edt.dat');
+
+IfFileExists("%$(`FasTeXini`);","",!"JMP('_ERROR');");
+IfFileExists("%$(`FasTeXedt`);","",!"JMP('_ERROR');");
+IfFileExists("%$(`FasTeXdat`);","",!"JMP('_ERROR');");
+LoadConfig('%$(`FasTeXini`);');
+Prompt('FasTeX installation completed!',0,1);
+JMP('_END');
+
+:_ERROR:: ========================================================
+Prompt('FasTeX installation problem detected!%\>
+Please copy FasTeX installation files to the paths below:%\>
+%$(`FasTeXini`);%\%\>
+%$(`FasTeXedt`);%\%\>
+%$(`FasTeXdat`);',3,1);
+JMP('_END');
+
+:_END:: ========================================================
+Release('FasTeXini');
+Release('FasTeXedt');
+Release('FasTeXdat');
+End;

@@ -1,0 +1,6 @@
+*.log
+*.dat
+*.dnt
+*.bak
+*.prj
+Config/
