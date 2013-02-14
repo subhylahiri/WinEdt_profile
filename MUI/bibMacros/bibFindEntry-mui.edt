@@ -1,0 +1,13 @@
+// MUI Settings File: "bibFindEntry-mui.edt"
+// Created by MUISave: Friday, January 25, 2013  17:15
+
+  MUISet("e_string_1","text","fusi");
+  MUISet("e_string_2","text","");
+  MUISet("r_findBoth_and","checked","1");
+  MUISet("c_type","index","0");
+  MUISet("x_whole","checked","0");
+  MUISet("x_cs","checked","0");
+  MUISet("x_re","checked","0");
+
+// ========================================================== 
+
