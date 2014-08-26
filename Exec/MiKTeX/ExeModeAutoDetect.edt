@@ -22,8 +22,8 @@
   Assign(!"^TeXOutput", !"%P\TeXAux");
   Assign(!"^TeXOutputMustExist", !"1");
 
-  Assign(!"TeX-Local", "d:\Users\Subhy\MikTeX-local");
-  Assign(!"TeX-LocalDef", !"d:\Users\Subhy\MikTeX-local");
+  Assign(!"TeX-Local", "%@('USERPROFILE');\MikTeX-local");
+  Assign(!"TeX-LocalDef", !"%@('USERPROFILE');\MikTeX-local");
 
   Assign(!"Max-TeXify-Iterations", !"3");
   Assign(!"PDFTeXify-Method", !"0");

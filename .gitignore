@@ -3,6 +3,6 @@
 *.dnt
 *.bak
 *.prj
-Config/
+Config/PDFAutoDetect.edt
 MUI/
 ConfigEx/UserPreferences.ini
